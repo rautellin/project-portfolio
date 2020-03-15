@@ -20,7 +20,7 @@ h4, h3, h2, h1 {
 h1 {
   font-family: 'Montserrat', sans-serif;
   text-transform: lowercase;
-  font-size: 40px;
+  font-size: 70px;
   margin: 5px 0;
 }
 
@@ -36,14 +36,14 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   text-transform: lowercase;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 30px;
 }
 
 h4 {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 23px;
   margin: 10px 0;
 }
 
@@ -53,39 +53,15 @@ p {
   line-height: 1.5;
 }
 
-/* PARALLAX */
-
-/* .parallax {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  width: 100%;
-  /* height: 100vh; */
-} */
-
-header h2 {
-  background: transparent;
-}
-
-.parallax:nth-child(1) {
-  
-  color: white;
-}
-
 
 /* HEADER */
+
 .parallax {
   height: 500px;
   background-image: url(./img/background1.jpg);
   background-size: cover;
   background-position: top left;
   padding: 10px 10px 0 10px;
-}
-
-.header-box {
-  margin: 0 auto;
-  max-width: 1100px;
 }
 
 .header-icons-box {
@@ -96,12 +72,7 @@ header h2 {
   top: 70px;
   right: 10%;
 }
-
-.header-box a {
-  margin-left: 5px;
-}
-
-.header-icon-link {
+.header-icon-container a{
   width: 30px;
   height: 30px;
   display: flex;
@@ -112,20 +83,25 @@ header h2 {
   cursor: pointer;
 }
 
-.header-icon-img {
+.header-icon-container img {
   width: 14px;
 }
 
 .header-text-box {
-  width: 75%;
+  width: 35%;
   position: absolute;
   top: 170px;
   left: 10%;
 }
 
+header a {
+  margin-left: 5px;
+}
+
+
 header h4 {
   letter-spacing: 1.2px;
-  font-size: 13px;
+  font-size: 24px;
   font-weight: 300;
   margin: 5px 0;
 }
@@ -134,348 +110,26 @@ header h3 {
   margin: 10px 0;
 }
 
-.header-text-name-focus {
+.text-box span {
   font-weight: 700;
 }
 
-.header-profile-box {
-  top: 360px;
+.profile-img-container {
   right: 10%;
-  width: 160px;
   position: absolute;
   margin: 0;
+  width: 280px;
+  top: 250px;
 }
 
-.header-profile-img {
+.profile-img-container img {
   width: 100%;
   border-radius: 50%;
   border: 3px solid white;
 }
 
 
-/* SUMMARY */
-main {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-}
 
-.box-bg-grey {
-  background-color: #F4F4F4;
-}
-
-.summary-text,
-.tech-text,
-.projects-box,
-.projects-others,
-.my-thoughts-box,
-.more-thoughts-box,
-.skills-section,
-.more-section-box {
-  padding: 50px 10%;
-  margin: 0 auto;
-  max-width: 1000px;
-}
-
-.summary-text p {
-  font-family: 'Montserrat', sans-serif;
-  text-align: left;
-}
-
-/* kolla dessa så det funkar - koden - css ::after creates a pseudo-element */
-.line-sep-dot {
-  height: 3px;
-  width: 50px;
-  background-color: rgb(79, 134, 216);
-  position: relative;
-  float: left;
-  top: 12px;
-  margin-right: 10px;
-}
-.line-sep-dot::after {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background-color: rgb(79, 134, 216);
-  content: "";
-  float: right;
-  top: -4px;
-  position: relative;
-}
-
-/* ---- my TECH Section - styling ------ */
-.box-bg-white {
-  background-color: white;
-}
-
-.tech-text h2 {
-  text-transform: uppercase;
-}
-
-.tech-text p {
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* ---- my PROJECTS Section - styling ------ */
-.projects-box h2 {
-  text-transform: uppercase;
-}
-/* ---- kontrollera denna kod: ------ */
-.projects-flex-box {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.projects-card-space {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  text-align: left;
-  width: 100%;
-  margin-bottom: 30px;
-  /* max-width: 340px; */
-}
-
-.projects-title-on-card {
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(215, 228, 247);
-  /* background-color: rgb(79, 134, 216); */
-  padding: 3px 10px;
-  display: inline-block;
-  margin: 0 0 5px 0;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 17px;
-  align-self: center;
-  /* padding-top: 25%; */
-  top: 30%;
-  position: absolute;
-}
-
-.projects-card-bg-img {
-  height: 182px;
-  width: 100%;
-  background-size: cover;
-  box-shadow: inset 0 0 0 100vmax rgba(49, 89, 116, 0.8);
-  background-position: center center;
-}
-
-.projects-card-text {
-  margin: 15px 0;
-  color: #000;
-  font-size: 17px;
-  line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
-}
-
-.card-text-marked {
-  color: rgb(79, 134, 216);
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.card-arrow-marked {
-  text-decoration: underline;
-  color: rgb(79, 134, 216);
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.projects-techinfo-box {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-}
-
-.techinfo-label {
-  background-color: rgb(155, 193, 249);
-  color: #FFF;
-  display: inline-block;
-  padding: 3px 8px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  margin-right: 3px;
-}
-
-/* ---- my OTHER Section - styling ------ */
-.projects-others h3 {
-  text-transform: uppercase;
-  color: rgb(79, 134, 216);
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.projects-others-card {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  text-align: left;
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-/* ---- my MY THOUGHTS Section - styling ------ */
-.my-thoughts-box h2 {
-  text-transform: uppercase;
-  color: #FFF;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.my-thoughts-box p {
-  text-transform: uppercase;
-  color: rgb(79, 134, 216);
-  font-size: 20px;
-  font-weight: 300;
-  margin: 20px 3px 0 0px;
-}
-
-.my-thoughts-flex-box {
-  margin-top: 20px;
-}
-
-.my-thoughts-card-space {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-bottom: 30px;
-}
-
-.my-thoughts-img {
-  height: 240px;
-  width: 100%;
-  background-size: cover;
-  /* box-shadow: inset 0 0 0 100vmax rgba(49, 89, 116, 0.8); */
-  background-position: center center;
-}
-
-.my-thoughts-title-on-card {
-  text-transform: uppercase;
-  color: #000;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: 'Roboto', sans-serif;
-}
-
-.my-thoughts-text {
-  color: #000;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
-  margin: 5px 0 15px;
-  line-height: 1.5;
-}
-
-/* ---- my MORE THOUGHTS Section - styling ------ */
-.more-thoughts-box h3 {
-  text-transform: uppercase;
-  color: rgb(79, 134, 216);
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.more-thoughts-card {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 100%;
-  margin-bottom: 20px;
-
-}
-
-.more-thoughts-text {
-  font-size: 18px;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
-  color: #000;
-}
-
-.more-thoughts-text-marked {
-  text-transform: uppercase;
-  color: rgb(79, 134, 216);
-  font-size: 20px;
-  font-weight: 300;
-  margin: 20px 3px 0 0px;
-}
-
-/* ---- my SKILLS Section - styling ------ */
-.skills-section h2 {
-  text-transform: uppercase;
-}
-
-.skills-section-box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  justify-content: space-evenly;
-  font-family: 'Roboto', sans-serif;
-  color: #000;
-}
-
-.skills-section-box h4 {
-  text-transform: uppercase;
-  color: rgb(79, 134, 216);
-  font-size: 20px;
-  font-weight: 700;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 0 15px 0;
-}
-
-li {
-  font-size: 17px;
-  line-height: 1.5;
-}
-
-/* ---- my MORE Section - styling ------ */
-.more-section-box h2 {
-  text-transform: uppercase;
-}
-
-.more-section-links-box {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 15px;
-}
-
-.more-section-links {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.more-section-links p {
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin: 10px;
-  color: rgb(79, 134, 216);
-}
-
-.more-icon-link {
-  width: 60px;
-  height: 60px;
-  border: 3px solid rgb(79, 134, 216);
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.more-icon-img {
-  width: 30px;
-  /* fill: #000; */
-  /* border: 3px solid rgb(79, 134, 216); */
-}
 
 /* FOOTER */
 footer {
@@ -499,209 +153,3 @@ footer img{
   margin-top: 60px;
 }
 
-
-/* responsive design */
-
-/* ----------- 668px TABLET ------------------ */
-@media (min-width: 668px) {
-
-  
-
-  .header-icon-link {
-    width: 70px;
-    height: 70px;
-  }
-
-  .header-icon-img {
-    width: 30px;
-  }
-
-  h4 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 32px;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  h1 {
-    font-size: 58px;
-  }
-
-  p {
-    font-size: 20px;
-  }
-
-  .line-sep-dot {
-    top: 14px;
-  }
-
-  .header-text-box {
-    width: 45%;
-  }
-
-  .header-text-box h4 {
-    font-size: 16px;
-  }
-
-  .header-profile-box {
-    width: 220px;
-    top: 300px;
-  }
-
-  .projects-flex-box {
-    flex-direction: row;
-  }
-
-  .projects-card-space {
-    /* margin-left: 20px;
-    max-width: 340px; */
-    width: 49%;
-  }
-
-  .my-thoughts-box h2 {
-    text-transform: uppercase;
-    color: #FFF;
-    font-size: 32px;
-    font-weight: 700;
-  }
-
-  .more-section-links p {
-    font-size: 18px;
-  }
-
-  .more-icon-link {
-    width: 80px;
-    height: 80px;
-  }
-
-  .more-icon-img {
-    width: 30px;
-  }
-
-  .more-section-box {
-    max-width: 380px;
-  }
-
-  footer h3 {
-    font-size: 28px;
-  }
-
-  footer h4 {
-    font-size: 24px;
-  }
-
-  footer p {
-    font-size: 22px;
-  }
-}
-
-/* -----------900px DESKTOP ------------------ */
-@media (min-width: 900px) {
-
-  
-
-  h4 {
-    font-size: 23px;
-  }
-
-  h3 {
-    font-size: 30px;
-  }
-
-  h1 {
-    font-size: 70px;
-  }
-
-  p {
-    font-size: 24px;
-  }
-
-  .line-sep-dot {
-    top: 16px;
-  }
-
-  .header-box a {
-    margin-left: 10px;
-  }
-
-  .header-text-box {
-    width: 35%;
-  }
-
-  .header-text-box h4 {
-    font-size: 24px;
-  }
-
-  .header-profile-box {
-    width: 280px;
-    top: 250px;
-  }
-
-  .projects-card-space {
-
-    width: 45%;
-  }
-
-  .projects-title-on-card {
-    font-size: 22px;
-  }
-
-  .projects-card-bg-img {
-    height: 250px;
-  }
-
-  .projects-others h3 {
-    font-size: 30px;
-  }
-
-  .projects-card-text {
-    font-size: 22px;
-  }
-
-  .my-thoughts-flex-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .my-thoughts-card-space {
-    width: 45%;
-  }
-
-  .my-thoughts-text {
-    font-size: 22px;
-  }
-
-  .more-thoughts-box h3 {
-    font-size: 30px;
-  }
-
-  .more-thoughts-text {
-    font-size: 22px;
-  }
-
-  .skills-section-left {
-    width: 30%;
-  }
-
-  .skills-section-right {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .skills-section-box h4 {
-    font-size: 22px;
-    font-weight: 700;
-  }
-
-  li {
-    font-size: 20px;
-  }
-}

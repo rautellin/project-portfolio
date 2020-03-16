@@ -12,6 +12,7 @@
 
 a {
   color: white;
+  cursor: pointer;
 }
 
 main {
@@ -208,6 +209,54 @@ header h3 span{
 .featured-projects{
   width: 1088px;
 }
+
+/* F0R MORE */
+
+.for-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.for-more p{
+  color: rgb(79, 134, 216);
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 23px;
+  text-align: center;
+}
+
+.for-more-icons {
+  width: 1088px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.for-more-icons a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.for-more-icon {
+  border: 3px solid rgb(79, 134, 216);
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.for-more-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+
+
 
 
 /* FOOTER */

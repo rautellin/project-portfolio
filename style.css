@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap');
 
 /* DEFAULT SETTINGS */
 
@@ -84,35 +84,47 @@ header h1 {
 header h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 header h3 span{
- font-weight: bold;
+ font-weight: 400;
 }
 
 .header-icon-container {
   width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
 }
 
-.header-icon-container img {
+.header-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-container h1 {
+  width: 35%;
+}
+
+.icon-container {
+  display: flex;
+  height: 75px;
+  margin: 100px 15px 0 0;
+}
+
+.icon-container img {
   width: 70px;
   height: 70px;
   padding: 15px;
 }
 
-.header-icon-container a{
+.icon-container a{
   border: 3px solid #FFF;
   border-radius: 50%;
   cursor: pointer;
-  margin: 0 10px;
-}
-
-.text-box-container h1 {
-  width: 35%;
+  margin: 0 5px;
 }
 
 .profile-img-container{
@@ -140,7 +152,8 @@ header h3 span{
   justify-content: center;
   align-items: center;
   background-color: #F4F4F4;
-  height: 300px;
+  height: 500px;
+  text-align: justify;
 }
 
 .description p{
@@ -148,32 +161,65 @@ header h3 span{
 }
 
 .line-sep-dot {
-  height: 3px;
+  height: 4px;
   width: 50px;
   background-color: rgb(79, 134, 216);
   position: relative;
   float: left;
-  top: 12px;
+  top: 17px;
   margin-right: 10px;
 }
 .line-sep-dot::after {
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: rgb(79, 134, 216);
   content: "";
   float: right;
-  top: -4px;
+  top: -3px;
   position: relative;
+}
+
+/* TECH */
+
+.tech{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.tech p{
+  width: 1088px;
+  text-align: center;
+}
+
+/* FEATURED PROJECTS */
+
+.projects-container{
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-projects{
+  width: 1088px;
 }
 
 
 /* FOOTER */
 footer {
   background-color: rgb(79, 134, 216);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 30px 0;
-  height: 10%;
+  height: 500px;
+  color: white;
 }
 
 footer h4 {

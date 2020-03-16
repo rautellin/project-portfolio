@@ -59,6 +59,62 @@ p {
   line-height: 1.5;
 }
 
+/* NAV */
+
+nav{
+  position: fixed;
+  top: 50%;
+  z-index: 2;
+}
+
+nav ul{
+  transform: translateX(-270px);
+}
+
+nav ul li {
+  display: block;
+  margin: 5px;
+  background-color: rgba(0,0,0,0.5);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 50px 50px 0;
+  transition: all 1s;
+}
+
+nav ul li:hover{
+  transform: translateX(160px);
+}
+
+nav ul li.twitter:hover{
+  background-color: rgb(79, 134, 216);
+}
+
+nav ul li a{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+nav ul li i{
+  text-align: center;
+  margin-left: 14px;
+  color: white;
+  background-color: white;
+  padding: 20px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  transform: rotate(0deg);
+}
+
+nav ul li:hover i{
+ transform: rotate(360deg);
+ color: rgb(79, 134, 216);
+ transition: all 1s;
+}
 
 /* HEADER */
 

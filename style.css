@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 a {
@@ -196,6 +197,7 @@ header h3 span{
   text-align: center;
 }
 
+
 /* FEATURED PROJECTS */
 
 .projects-container{
@@ -209,6 +211,36 @@ header h3 span{
 .featured-projects{
   width: 1088px;
 }
+
+/* SKILLS */
+
+.skills-container{
+  background-color: #F4F4F4;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  width: 1088px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills h4{
+  color: rgb(79, 134, 216);
+  text-align: center;
+}
+
+.skills li{
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  text-align: center;
+}
+
+
 
 /* F0R MORE */
 
@@ -226,12 +258,15 @@ header h3 span{
   text-transform: uppercase;
   font-size: 23px;
   text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .for-more-icons {
   width: 1088px;
   display: flex;
   justify-content: space-evenly;
+  padding-top: 10px;
 }
 
 .for-more-icons a{
@@ -241,7 +276,7 @@ header h3 span{
 }
 
 .for-more-icon {
-  border: 3px solid rgb(79, 134, 216);
+  border: 5px solid rgb(79, 134, 216);
   border-radius: 50%;
   width: 160px;
   height: 160px;
@@ -254,9 +289,6 @@ header h3 span{
   width: 60px;
   height: 60px;
 }
-
-
-
 
 
 /* FOOTER */

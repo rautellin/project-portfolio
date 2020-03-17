@@ -127,7 +127,7 @@ nav ul li:hover i{
 /* HEADER */
 
 .parallax {
-  height: 600px;
+  height: 90vh;
   background-image: url(./img/background.jpg);
   background-size: cover;
   background-position: top left;
@@ -193,15 +193,19 @@ header h3 span{
   margin: 0 5px;
 }
 
+
+/* DESCRIPTION */
+
 .profile-img-container{
+  width: 1088px;
   display: flex;
   justify-content: flex-end;
 }
 
 .profile-img {
-  position: absolute;
   width: 280px;
-  top: 370px;
+  position: absolute;
+  bottom: -10px;
 }
 
 .profile-img-container img {
@@ -210,16 +214,14 @@ header h3 span{
   border: 3px solid white;
 }
 
-
-/* DESCRIPTION */
-
 .description{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #F4F4F4;
-  height: 500px;
   text-align: justify;
+  padding: 120px 0;
 }
 
 .description p{

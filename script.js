@@ -5,6 +5,11 @@ const links = document.querySelectorAll("a")
 links.forEach(a => a.setAttribute("target", "_blank"))
 
 
+// LINK IN FOR CONTACT SIDEBAR
+
+const contact = document.getElementById("footer")
+contact.setAttribute("target", "self")
+
 // PARALLAX SCROLL
 
 const parallax = document.querySelectorAll(".parallax");

@@ -22,10 +22,13 @@ main {
 
 mark {
   background-color: transparent;
-  color: rgb(79, 134, 216);
+  color: rgb(173, 142, 207);
   font-weight: bold;
   margin-left: 6px;
-  text-decoration: underline;
+}
+
+mark:hover {
+  color: rgb(122, 216, 79);
 }
 
 /* OVERAL FONT SETTINGS*/
@@ -35,7 +38,7 @@ h4, h3, h2, h1 {
 }
 
 h2 {
-  background-color: rgb(79, 134, 216);
+  background-color: rgb(173, 142, 207);
   padding: 3px 10px;
   display: inline-block;
   margin: 0 0 25px 0;
@@ -95,7 +98,7 @@ nav ul li:hover{
 }
 
 nav ul li.twitter:hover{
-  background-color: rgb(79, 134, 216);
+  background-color: rgb(173, 142, 207);
 }
 
 nav ul li a{
@@ -120,7 +123,7 @@ nav ul li i{
 
 nav ul li:hover i{
  transform: rotate(360deg);
- color: rgb(79, 134, 216);
+ color: rgb(173, 142, 207);
  transition: all 1s;
 }
 
@@ -230,7 +233,7 @@ header h3 span{
 
 .description a{
   margin-top: 2rem;
-  color: rgb(79, 134, 216);
+  color: rgb(173, 142, 207);
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
 }
@@ -242,7 +245,7 @@ header h3 span{
 .line-sep-dot {
   height: 4px;
   width: 50px;
-  background-color: rgb(79, 134, 216);
+  background-color: rgb(173, 142, 207);
   position: relative;
   float: left;
   top: 17px;
@@ -252,7 +255,7 @@ header h3 span{
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: rgb(79, 134, 216);
+  background-color: rgb(173, 142, 207);
   content: "";
   float: right;
   top: -3px;
@@ -320,7 +323,7 @@ header h3 span{
 .projects-container h4{
   font-weight: bold;
   font-size: 25px;
-  color: rgb(79, 134, 216);
+  color: rgb(173, 142, 207);
 }
 
 .projects-container p {
@@ -342,7 +345,7 @@ header h3 span{
 }
 
 .projects-container h3 {
-  color: rgb(79, 134, 216);
+  color: rgb(173, 142, 207);
   margin-top: 100px;
 }
 
@@ -377,7 +380,7 @@ header h3 span{
 }
 
 .skills h4{
-  color: rgb(79, 134, 216);
+  color: rgb(173, 142, 207);
   text-align: center;
 }
 
@@ -387,7 +390,48 @@ header h3 span{
   text-align: center;
 }
 
+/* MY THOUGHTS */
 
+.my-thoughts-container {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-post-container{
+  width: 100vw;
+}
+
+.my-thoughts-container a{
+  width: 1088px;
+}
+
+.my-thoughts-container  h4{
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(173, 142, 207);
+}
+
+.my-thoughts-container  p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: black;
+}
+
+.my-thoughts-container  time{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: rgb(122, 216, 79);
+}
+
+.my-thoughts-container img{
+  object-fit: cover;
+  max-width: 100%;
+  margin: 1rem 0;
+}
 
 /* F0R MORE */
 
@@ -400,7 +444,7 @@ header h3 span{
 }
 
 .for-more p{
-  color: rgb(79, 134, 216);
+  color: rgb(173, 142, 207);
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 23px;
@@ -423,7 +467,7 @@ header h3 span{
 }
 
 .for-more-icon {
-  border: 5px solid rgb(79, 134, 216);
+  border: 5px solid rgb(173, 142, 207);
   border-radius: 50%;
   width: 160px;
   height: 160px;
@@ -440,7 +484,7 @@ header h3 span{
 
 /* FOOTER */
 footer {
-  background-color: rgb(79, 134, 216);
+  background-color: rgb(173, 142, 207);
   display: flex;
   flex-direction: column;
   justify-content: center;

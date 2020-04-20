@@ -282,6 +282,10 @@ header h3 span{
 
 .tech{
   padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .tech-container{

@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -31,8 +32,11 @@ mark {
   margin-left: 6px;
 }
 
-mark:hover {
-  color: rgb(0, 167, 210);
+section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* OVERAL FONT SETTINGS*/
@@ -172,6 +176,7 @@ header h3 span{
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .header-title-container{
@@ -179,14 +184,13 @@ header h3 span{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 2rem;
 }
-
-
 
 .icon-container {
   display: flex;
   height: 75px;
-  margin: 100px 15px 0 0;
+  margin: 100px 2rem 0 0;
 }
 
 .icon-container img {
@@ -205,8 +209,23 @@ header h3 span{
 
 /* DESCRIPTION */
 
+.description{
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 0;
+}
+
+.description-container{
+  width: 100%;
+  max-width: 1088px;
+  padding: 0 2rem;
+  text-align: justify;
+}
+
 .profile-img-container{
-  width: 1088px;
   display: flex;
   justify-content: flex-end;
 }
@@ -223,25 +242,13 @@ header h3 span{
   border: 3px solid white;
 }
 
-.description{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #F4F4F4;
-  text-align: justify;
-  padding: 120px 0;
-}
-
-.description p{
-  width: 1088px;
-}
-
 .description a{
   margin-top: 2rem;
   color: rgb(173, 142, 207);
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
+  display: block;
+  text-align: center;
 }
 
 .description a:hover{
@@ -264,7 +271,7 @@ header h3 span{
   background-color: rgb(173, 142, 207);
   content: "";
   float: right;
-  top: -3px;
+  top: -4px;
   position: relative;
 }
 
@@ -272,18 +279,19 @@ header h3 span{
 /* TECH */
 
 .tech{
+  padding: 8rem 0;
+}
+
+.tech-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
-}
-
-.tech p{
-  width: 1088px;
+  width: 100%;
+  max-width: 1088px;
+  padding: 0 2rem;
   text-align: center;
 }
-
 
 /* FEATURED PROJECTS */
 
@@ -545,3 +553,6 @@ footer img{
   margin-top: 60px;
 }
 
+@media (max-width: 800px){
+
+}

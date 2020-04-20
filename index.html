@@ -24,7 +24,7 @@
 
   <header class="parallax">
 
-    <section class="header-container">
+    <div class="header-container">
 
       <div class="header-icon-container">
 
@@ -49,7 +49,7 @@
 
       </div>
 
-    </section>
+    </div>
 
   </header>
 
@@ -57,29 +57,35 @@
   <main>
 
     <section class="description">
-      <div class="profile-img-container">
-        <div class="profile-img">
-          <img src="/img/pic.png" alt="Profile Image">
-        </div>
-      </div>
+      <div class="description-container">
 
-      <p> <span class="line-sep-dot"></span>
-        You either find me typing on a keyboard or at the gym somewhere between the weights. So basically I'm always
-        building something, if not websites and applications then physical strength.
-        <br><br>My love for code goes way back, and after years apart we’re now finally living happily ever after.
-        However I'm still in the process of deciding which programming language is my favorite. I'm a bit indecisive.
-        But currently I'm enjoying
-        JavaScript, or more exact React.js. </p>
-      <a target="_blank" href="https://nathalierautell.com/">Click here to see this portfolio written in
-        React.js</a>
+        <div class="profile-img-container">
+          <div class="profile-img">
+            <img src="/img/pic.png" alt="Profile Image">
+          </div>
+        </div>
+
+        <p> <span class="line-sep-dot"></span>
+          You either find me typing on a keyboard or at the gym somewhere between the weights. So basically I'm always
+          building something, if not websites and applications then physical strength.
+          <br><br>My love for code goes way back, and after years apart we’re now finally living happily ever after.
+          However I'm still in the process of deciding which programming language is my favorite. I'm a bit indecisive.
+          But currently I'm enjoying
+          JavaScript, or more exact React.js. </p>
+        <a target="_blank" href="https://nathalierautell.com/">Click here to see this portfolio written in
+          React.js</a>
+      </div>
     </section>
 
     <section class="tech">
-      <h2>Tech</h2>
-      <p>HTML ⎪ CSS ⎪ JavaScript ⎪ ES6 ⎪ JSX ⎪ React.js ⎪ React Native ⎪ Redux ⎪ Node.js ⎪ Mongo DB ⎪ Web Accessibility
-        ⎪ API ⎪ JSON ⎪
-        Git
-      </p>
+      <div class="tech-container">
+        <h2>Tech</h2>
+        <p>HTML ⎪ CSS ⎪ JavaScript ⎪ ES6 ⎪ JSX ⎪ React.js ⎪ React Native ⎪ Redux ⎪ Node.js ⎪ Mongo DB ⎪ Web
+          Accessibility
+          ⎪ API ⎪ JSON ⎪
+          Git
+        </p>
+      </div>
     </section>
 
 
@@ -138,22 +144,21 @@
           </a>
           <ul class="project-tech">
             <li>React.js</li>
-            <li>API</li>
+            <li>ES6</li>
             <li>CSS3</li>
             <li>JSX</li>
           </ul>
         </div>
 
         <div class="project">
-          <a target="_blank" href="https://github.com/rautellin">
+          <a target="_blank" href="https://github.com/rautellin/project-music-releases">
             <figure>
-              <img src="/img/movies.png" alt="">
-              <h3>Movie app</h3>
+              <img src="/img/musicrelease.png" alt="">
+              <h3>Music release App</h3>
             </figure>
-            <h4>Movie app</h4>
-            <p>Multi-page React.js application showing data from themoviedb.org's API. The shown data is fetched from
-              different API urls, the chosen url is based on to the user interaction.
-              <mark>>></mark></p>
+            <h4>Music release App</h4>
+            <p>One-page React.js application showing data from Spotify's API. The application shows new music releases
+              and popular playlists.<mark>>></mark></p>
           </a>
           <ul class="project-tech">
             <li>React.js</li>
@@ -163,8 +168,40 @@
           </ul>
         </div>
 
+        <div class="project">
+          <a target="_blank" href="https://github.com/rautellin/project-weather-app">
+            <figure>
+              <img src="/img/weather.png" alt="">
+              <h3>Weather app</h3>
+            </figure>
+            <h4>Weather app</h4>
+            <p>Weather application showing data fetched from Open Weather Map's API. The application is showing current
+              weather and a five day forecast based on the user's current location. The application also has a darkmode
+              depending on the current time and other CSS animations.<mark>>></mark></p>
+          </a>
+          <ul class="project-tech">
+            <li>ES6</li>
+            <li>API</li>
+            <li>CSS3</li>
+            <li>JSON</li>
+          </ul>
+        </div>
 
-
+        <div class="project">
+          <a target="_blank" href="https://github.com/rautellin/project-business-site">
+            <figure>
+              <img src="/img/business.png" alt="">
+              <h3>Business site</h3>
+            </figure>
+            <h4>Business site</h4>
+            <p> A business site with main focus the functionality and the design for a hero video, an accordian and a
+              sign up form.<mark>>></mark></p>
+          </a>
+          <ul class="project-tech">
+            <li>CSS3</li>
+            <li>HTML5</li>
+          </ul>
+        </div>
 
       </div>
 

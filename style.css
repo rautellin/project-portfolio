@@ -295,17 +295,31 @@ header h3 span{
 
 /* FEATURED PROJECTS */
 
-.projects-container{
+.projects{
   background-color: #F4F4F4;
+  padding: 8rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+}
+
+.projects-container{
+  width: 100%;
+  max-width: 1088px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-container h3 {
+  color: rgb(173, 142, 207);
 }
 
 .featured-projects{
-  width: 1088px;
+  width: 100%;
   grid-gap: 2rem;
   margin: 2rem 0;
   display: grid;
@@ -318,22 +332,21 @@ header h3 span{
   object-fit: cover;
 }
 
+.project {
+  margin-bottom: 2rem;
+}
+
 .project figure{
-  height: 309px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.project a{
-  max-width: 1088px;
 }
 
 .project figure{
   position: relative;
 }
 
-.projects-container h3 {
+.featured-projects h3 {
   color: white;
   position: absolute;
   visibility: hidden;
@@ -384,10 +397,6 @@ header h3 span{
   color: white;
 }
 
-.other-projects{
-  width: 1088px;
-}
-
 .other-projects a{
   color: black;
   text-align: justify;
@@ -407,80 +416,97 @@ header h3 span{
 }
 
 
-/* SKILLS */
-
-.skills-container{
-  background-color: #F4F4F4;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.skills {
-  width: 1088px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.skills h4{
-  color: rgb(173, 142, 207);
-  text-align: center;
-}
-
-.skills li{
-  font-family: 'Roboto', sans-serif;
-  font-size: 23px;
-  text-align: center;
-}
-
 /* MY THOUGHTS */
 
-.my-thoughts-container {
-  margin: 3rem 0;
+
+.thoughts{
+  padding: 8rem 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.blog-post-container{
-  width: 100vw;
+.thoughts-container{
+  width: 100%;
+  max-width: 1088px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.my-thoughts-container a{
-  width: 1088px;
+.thoughts-container a{
   text-align: justify;
 }
 
-.my-thoughts-container  h4{
+.thoughts-container  h4{
   font-weight: bold;
   font-size: 25px;
   color: rgb(173, 142, 207);
 }
 
-.my-thoughts-container  p{
+.thoughts-container  p{
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   color: black;
 }
 
-.my-thoughts-container  time{
+.thoughts-container  time{
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 25px;
   color: rgb(0, 167, 210);
 }
 
-.my-thoughts-container img{
+.thoughts-container img{
   object-fit: cover;
   max-width: 100%;
   margin: 1rem 0;
 }
 
-.my-thoughts-container a:hover mark{
+.thoughts-container a:hover mark{
   color: rgb(0, 167, 210);
+}
+
+
+/* SKILLS */
+
+.skills{
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4F4F4;
+}
+
+.skills-container{
+  width: 100%;
+  max-width: 1088px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-list-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills-list-container h4{
+  color: rgb(173, 142, 207);
+  text-align: center;
+}
+
+.skills-list-container li{
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  text-align: center;
 }
 
 /* F0R MORE */

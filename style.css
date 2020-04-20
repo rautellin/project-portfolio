@@ -11,6 +11,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: white;
   cursor: pointer;
@@ -28,7 +32,7 @@ mark {
 }
 
 mark:hover {
-  color: rgb(122, 216, 79);
+  color: rgb(0, 167, 210);
 }
 
 /* OVERAL FONT SETTINGS*/
@@ -98,7 +102,7 @@ nav ul li:hover{
 }
 
 nav ul li.twitter:hover{
-  background-color: rgb(173, 142, 207);
+  background-color: rgb(0, 167, 210);
 }
 
 nav ul li a{
@@ -123,7 +127,7 @@ nav ul li i{
 
 nav ul li:hover i{
  transform: rotate(360deg);
- color: rgb(173, 142, 207);
+ color: rgb(0, 167, 210);
  transition: all 1s;
 }
 
@@ -139,8 +143,12 @@ nav ul li:hover i{
 
 .header-container{
   max-width: 1088px;
-  margin: 0 auto;
+  margin: 0 auto ;
   height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header h1 {
@@ -166,16 +174,14 @@ header h3 span{
   display: flex;
 }
 
-.header-container{
+.header-title-container{
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.header-container h1 {
-  width: 35%;
-}
+
 
 .icon-container {
   display: flex;
@@ -239,7 +245,7 @@ header h3 span{
 }
 
 .description a:hover{
-  color: rgb(122, 216, 79);
+  color: rgb(0, 167, 210);
 }
 
 .line-sep-dot {
@@ -338,7 +344,7 @@ header h3 span{
 .projects-container li {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  background-color: rgb(6, 72, 126);
+  background-color: rgb(0, 167, 210);
   padding: 6px 10px;
   margin-right: 6px;
   color: white;
@@ -424,7 +430,7 @@ header h3 span{
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 25px;
-  color: rgb(122, 216, 79);
+  color: rgb(0, 167, 210);
 }
 
 .my-thoughts-container img{
@@ -484,7 +490,7 @@ header h3 span{
 
 /* FOOTER */
 footer {
-  background-color: rgb(173, 142, 207);
+  background-color: rgb(0, 167, 210);
   display: flex;
   flex-direction: column;
   justify-content: center;

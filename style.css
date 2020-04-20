@@ -228,6 +228,17 @@ header h3 span{
   width: 1088px;
 }
 
+.description a{
+  margin-top: 2rem;
+  color: rgb(79, 134, 216);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.description a:hover{
+  color: rgb(122, 216, 79);
+}
+
 .line-sep-dot {
   height: 4px;
   width: 50px;

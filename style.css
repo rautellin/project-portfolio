@@ -611,6 +611,10 @@ footer img{
   header h3 {
     font-size: 17px;
   }
+
+  .thoughts h4{
+    text-align: start;
+  }
   
 
   .main h2{

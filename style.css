@@ -723,4 +723,8 @@ footer img{
     padding: 0 1rem;
   }
 
+  .projects-container img{
+    max-width: 100%;
+  }
+
 }

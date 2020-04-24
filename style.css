@@ -609,13 +609,13 @@ footer img{
 }
 
 .project img, .thoughts-container img{
-  height: auto;
 
-  -webkit-transform: translate(0px, -20%);
-     -moz-transform: translate(0px, -20%);
-      -ms-transform: translate(0px, -20%);
-       -o-transform: translate(0px, -20%);
-          transform: translate(0px, -20%);
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+height: auto;
+width: 100%;
 }
 
 @supports (object-fit: cover) {

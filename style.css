@@ -508,6 +508,9 @@ header h3 span{
 .skills-list-container {
   width: 100%;
   display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   justify-content: space-evenly;
 }
 
@@ -555,6 +558,9 @@ header h3 span{
 .for-more-icons {
   width: 100%;
   display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   justify-content: space-evenly;
   padding-top: 10px;
 }

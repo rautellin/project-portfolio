@@ -340,16 +340,23 @@ header h3 span{
 
 .project {
   margin-bottom: 2rem;
+  width: 100%;
+}
+
+.project a{
+  max-width: 100%;
 }
 
 .project figure{
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-.project figure{
-  position: relative;
+.project img{
+  object-fit: cover;
+  max-width: 100%;
 }
 
 .featured-projects h3 {

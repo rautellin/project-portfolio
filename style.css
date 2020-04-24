@@ -458,6 +458,7 @@ transform: translate(-50%, -50%);
 
 .thoughts-container a{
   text-align: justify;
+  width: 100%;
 }
 
 .thoughts-container  h4{
@@ -608,17 +609,6 @@ footer img{
   margin-top: 1rem;
 }
 
-.project img, .thoughts-container img{
-
-  position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-height: auto;
-width: 100%;
-}
-
-@supports (object-fit: cover) {
   .project img{
     -webkit-transform: none;
     -moz-transform: none;
@@ -643,7 +633,7 @@ width: 100%;
     max-width: 100%;
     margin: 1rem 0;
   }
-}
+
 
 @media (max-width: 500px){
 

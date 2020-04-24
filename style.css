@@ -412,6 +412,10 @@ transform: translate(-50%, -50%);
   color: white;
 }
 
+.other-projects {
+  width: 100%;
+}
+
 .other-projects a{
   color: black;
   text-align: justify;
